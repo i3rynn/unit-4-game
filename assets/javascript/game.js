@@ -1,1 +1,3 @@
-placeholder text
+<script type="text/javascript">
+
+</script>
