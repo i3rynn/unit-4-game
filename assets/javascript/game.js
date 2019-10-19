@@ -15,42 +15,31 @@ $(document).ready(function () {
   $("#pale").attr("randVal", Math.floor(Math.random() * 12) + 1);
   console.log($("#pale").attr("randVal"));
 
-  // var sum = parseInt($("#pink").attr("randVal")) + parseInt($("#dark").attr("randVal")) + parseInt($("#purple").attr("randVal")) + parseInt($("#pale").attr("randVal"));
-  //console.log (sum);
 
   $("#pink").on("click", function () {
-    //sumScore = parseInt($("#sumScore").text()) + parseInt(($("#pink").attr("randVal")));
-    //console.log (parseInt($("#sumScore").text())+parseInt(($("#pink").attr ("randVal"))));//
     $("#sumScore").text(parseInt($("#sumScore").text()) + parseInt($("#pink").attr("randVal")));
     console.log('sumScore:' + sumScore + ', targetNumber: ' + targetNumber);
     resultCalc();
   });
 
   $("#dark").on("click", function () {
-    //parseInt($("#sumScore").text()) + parseInt(($("#dark").attr("randVal")))
-    //console.log(parseInt($("#sumScore").text()) + parseInt(($("#dark").attr("randVal"))));
     $("#sumScore").text(parseInt($("#sumScore").text()) + parseInt($("#dark").attr("randVal")));
     console.log('sumScore:' + sumScore + ', targetNumber: ' + targetNumber);
     resultCalc();
   });
 
-  $("#purple").on("click", function () {
-    //parseInt($("#sumScore").text()) + parseInt(($("#purple").attr("randVal")))
-    //console.log(parseInt($("#sumScore").text()) + parseInt(($("#purple").attr("randVal"))));
-    
+  $("#purple").on("click", function () { 
     $("#sumScore").text(parseInt($("#sumScore").text()) + parseInt($("#purple").attr("randVal")));
     console.log('sumScore:' + sumScore + ', targetNumber: ' + targetNumber);
     resultCalc();
   });
 
   $("#pale").on("click", function () {
-    //parseInt($("#sumScore").text()) + parseInt(($("#pale").attr("randVal")))
-    //console.log(parseInt($("#sumScore").text()) + parseInt(($("#pale").attr("randVal"))));
     $("#sumScore").text(parseInt($("#sumScore").text()) + parseInt($("#pale").attr("randVal")));
     console.log('sumScore:' + sumScore + ', targetNumber: ' + targetNumber);
     resultCalc();
   });
-  //console.log('sumScore',sumScore);
+ 
   console.log('targetNumber', targetNumber);
 
   function resultCalc() {
